@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Kawad</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap);
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+      @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
+      @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+    </style>
+  </head>
+  <body>
+      <div id="main">
+        <div id="toast" class="fixed top-4 hidden right-4 z-50 bg-green-500 text-white px-6 py-3 rounded shadow-lg transition-opacity duration-300">
+            <span id="toast-message">This is a toast message!</span>
+        </div>
+      <div class="w-full bg-gray-900 text-white min-h-screen">
+        <header
+          class="w-full sticky top-0 bg-gray-900 border-b border-gray-800 z-10"
+        >
+          <div
+            class="w-full max-w-[1300px] mx-auto px-4 sm:px-6 py-4 flex justify-between items-center"
+          >
+            <a
+              href="#"
+              class="text-xl font-bold flex items-center space-x-2 group"
+            >
+              <span
+                class="text-primary-500 group-hover:text-primary-400 transition-colors"
+                >&lt;</span
+              >
+              <span class="group-hover:text-gray-300 transition-colors"
+                >DevPortfolio</span
+              >
+              <span
+                class="text-primary-500 group-hover:text-primary-400 transition-colors"
+                >/&gt;</span
+              >
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+              <a
+                href="#about"
+                class="hover:text-primary-400 transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+                >About</a
+              >
+              <a
+                href="#projects"
+                class="hover:text-primary-400 transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+                >Projects</a
+              >
+              <a
+                href="#skills"
+                class="hover:text-primary-400 transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+                >Skills</a
+              >
+              <a
+                href="#experience"
+                class="hover:text-primary-400 transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+                >Experience</a
+              >
+              <a
+                href="#contact"
+                class="hover:text-primary-400 transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+                >Contact</a
+              >
+            </nav>
+            <details class="md:hidden relative">
+              <summary
+                class="list-none w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined">menu</span>
+              </summary>
+              <div
+                class="absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-20"
+              >
+                <a
+                  href="#about"
+                  class="block px-4 py-2 hover:bg-gray-700 transition-colors"
+                  >About</a
+                >
+                <a
+                  href="#projects"
+                  class="block px-4 py-2 hover:bg-gray-700 transition-colors"
+                  >Projects</a
+                >
+                <a
+                  href="#skills"
+                  class="block px-4 py-2 hover:bg-gray-700 transition-colors"
+                  >Skills</a
+                >
+                <a
+                  href="#experience"
+                  class="block px-4 py-2 hover:bg-gray-700 transition-colors"
+                  >Experience</a
+                >
+                <a
+                  href="#contact"
+                  class="block px-4 py-2 hover:bg-gray-700 transition-colors"
+                  >Contact</a
+                >
+              </div>
+            </details>
+          </div>
+        </header>
+        <section
+          class="relative py-20 overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800"
+        >
+          <div class="w-full max-w-[1300px] mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div class="space-y-6">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
+                  <span class="block">Hi, I&#x27;m</span>
+                  <span class="text-primary-500">Ayush Kawad</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl text-gray-300">
+                  Full Stack Developer
+                </h2>
+                <p class="text-gray-400 text-lg">
+                  Building beautiful, responsive web applications with modern
+                  technologies and passion for learning new technologies.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                  <a
+                    href="#contact"
+                    class="px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white font-medium rounded-md transition-colors shadow-lg hover:shadow-primary-500/20"
+                    >Get in touch</a
+                  >
+                  <a
+                    href="#projects"
+                    class="px-6 py-3 bg-gray-800 hover:bg-gray-700 border border-gray-700 font-medium rounded-md transition-colors"
+                    >View Projects</a
+                  >
+                </div>
+                <div class="flex space-x-4 pt-4">
+                  <a
+                    href="https://github.com/ayushkawad"
+                    class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-gray-700 transition-all hover:translate-y-[-2px]"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/ayushkawad"
+                    class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-gray-700 transition-all hover:translate-y-[-2px]"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://leetcode.com/u/ayushkawad/"
+                    class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-gray-700 transition-all hover:translate-y-[-2px]"
+                  >
+                    <i class="fa-solid fa-code"></i>
+                  </a>
+                  <a
+                    href="mailto:ayushkawad4@gmail.com"
+                    class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 hover:bg-gray-700 transition-all hover:translate-y-[-2px]"
+                  >
+                    <span class="material-symbols-outlined">mail</span>
+                  </a>
+                </div>
+              </div>
+              <div class="relative">
+                <div
+                  class="relative z-10 bg-gray-800 p-2 rounded-lg shadow-xl border border-gray-700 transform hover:scale-[1.02] transition-transform"
+                >
+                  <div
+                    class="w-full h-[350px] bg-gray-900 rounded overflow-hidden relative"
+                  >
+                    <div
+                      class="absolute inset-0 opacity-20 bg-gradient-to-tr from-primary-500 to-purple-600"
+                    ></div>
+                    <div class="w-full h-full">
+                      <div
+                        class="h-full coding inverse-toggle px-5 pt-4 shadow-lg text-gray-100 text-sm font-mono subpixel-antialiased bg-gray-800 pb-6 pt-4 rounded-lg leading-normal overflow-hidden"
+                      >
+                        <div class="top mb-2 flex">
+                          <div class="h-4 w-4 bg-red-500 rounded-full"></div>
+                          <div
+                            class="ml-2 h-4 w-4 bg-orange-300 rounded-full"
+                          ></div>
+                          <div
+                            class="ml-2 h-4 w-4 bg-green-500 rounded-full"
+                          ></div>
+                        </div>
+                        <div class="mt-4 flex flex-col">
+                            <p class="flex-1 typing items-center text-lg">
+                              <span class="text-green-400">~$</span>
+                              Welcome to my portfolio!
+                              <br />
+                            </p>
+                            <p class="flex-1 typing items-centerm text-lg">
+                                <span class="text-green-400">~$</span>
+                                Showcasing projects, skills, and creativity.
+                                <br />
+                            </p>
+                            <p class="flex-1 typing items-center text-lg">
+                              <span class="text-green-400">~$</span>
+                            Enjoy exploring!
+                            <br />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <img
+                                            src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6"
+                                            alt="Developer coding"
+                                            class="w-full h-full object-cover object-center"
+                                            keywords="programmer, developer, coding, computer, laptop, workspace"
+                                        /> -->
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-500/20 rounded-full blur-2xl"
+                ></div>
+                <div
+                  class="absolute -top-6 -left-6 w-32 h-32 bg-primary-500/20 rounded-full blur-2xl"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              class="w-full h-12 text-gray-900 fill-current"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.83,94.17,208.45,82.7Z"
+              ></path>
+            </svg>
+          </div>
+        </section>
+        <section id="about" class="py-20 bg-gray-900"></section>
+        <section id="experience" class="py-20 bg-gray-800">
+          <div class="w-full max-w-[1300px] mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Professional Experience
+              </h2>
+              <div class="w-20 h-1 bg-primary-500 mx-auto mb-6"></div>
+              <p class="text-gray-400 max-w-2xl mx-auto">
+                My professional journey across different organizations,
+                technologies, and roles.
+              </p>
+            </div>
+            <div
+              class="relative border-l-2 border-gray-700 ml-3 md:ml-6 pl-6 pb-6 space-y-10"
+            >
+              <div class="relative">
+                <div
+                  class="absolute -left-[41px] h-8 w-8 rounded-full bg-primary-500 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-white text-sm"
+                    >work</span
+                  >
+                </div>
+                <div
+                  class="bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700 hover:border-primary-500 transition-all duration-300"
+                >
+                  <div
+                    class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
+                  >
+                    <h3 class="text-xl font-bold text-white">
+                      Software Development Engineers - 1
+                    </h3>
+                    <div class="flex items-center mt-2 md:mt-0">
+                      <span
+                        class="bg-primary-500/20 text-primary-400 px-3 py-1 rounded-full text-sm"
+                        >Zuper</span
+                      >
+                      <span class="ml-3 text-gray-400 text-sm"
+                        >Dec 2023 - Apr 2025</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-gray-400 mb-4">
+                    <p class="mb-2">
+                      Technologies: JavaScript, TypeScript, Node.js, Express,
+                      Angular, RabbitMQ
+                    </p>
+                  </div>
+                  <ul class="space-y-2 text-gray-300 list-disc pl-5">
+                    <li>
+                      Delivered 30+ customer-specific product enhancements and
+                      built 150+ workflow automations in ad-hoc, fast-paced
+                      environments.
+                    </li>
+                    <li>
+                      Developed 5+ custom frontend applications using Angular
+                      and backend APIs with Node.js/Express.
+                    </li>
+                    <li>
+                      Created 10+ cross-product integrations with platforms like
+                      HubSpot, NetSuite, and Zendesk.
+                    </li>
+                    <li>
+                      Developed complex, real-time data synchronization
+                      workflows using N8N and JavaScript.
+                    </li>
+                    <li>
+                      Architected high-concurrency backend systems with
+                      RabbitMQ, scaling to handle 400+ concurrent user
+                      operations.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative">
+                <div
+                  class="absolute -left-[41px] h-8 w-8 rounded-full bg-gray-600 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-white text-sm"
+                    >work</span
+                  >
+                </div>
+                <div
+                  class="bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700 hover:border-primary-500 transition-all duration-300"
+                >
+                  <div
+                    class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
+                  >
+                    <h3 class="text-xl font-bold text-white">
+                      Software Development Engineer
+                    </h3>
+                    <div class="flex items-center mt-2 md:mt-0">
+                      <span
+                        class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm"
+                        >Zoho Corporation</span
+                      >
+                      <span class="ml-3 text-gray-400 text-sm"
+                        >Feb 2022 - Nov 2023</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-gray-400 mb-4">
+                    <p class="mb-2">
+                      Technologies: Java, Ember.js, JSP, JavaScript, PostgreSQL,
+                      C#, C++, PowerShell
+                    </p>
+                  </div>
+                  <ul class="space-y-2 text-gray-300 list-disc pl-5">
+                    <li>
+                      Developed a feature in Ember.js for customizable emails
+                      with attached reports, integrating with backend Java APIs.
+                    </li>
+                    <li>
+                      Optimized complex PostgreSQL queries and implemented
+                      caching mechanisms, improving performance by 60%.
+                    </li>
+                    <li>
+                      Built a feature to modify shared mailboxes through
+                      PowerShell scripts using JNI via a C++ bridge to C#
+                      services.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative">
+                <div
+                  class="absolute -left-[41px] h-8 w-8 rounded-full bg-gray-600 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-white text-sm"
+                    >work</span
+                  >
+                </div>
+                <div
+                  class="bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700 hover:border-primary-500 transition-all duration-300"
+                >
+                  <div
+                    class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
+                  >
+                    <h3 class="text-xl font-bold text-white">
+                      Software Development Engineer
+                    </h3>
+                    <div class="flex items-center mt-2 md:mt-0">
+                      <span
+                        class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm"
+                        >AdminDroid</span
+                      >
+                      <span class="ml-3 text-gray-400 text-sm"
+                        >Dec 2021 - Feb 2022</span
+                      >
+                    </div>
+                  </div>
+                  <ul class="space-y-2 text-gray-300 list-disc pl-5">
+                    <li>
+                      Developed scripts to create users, add them to groups, and
+                      move them between groups.
+                    </li>
+                    <li>
+                      Used scripts to manage user permissions and roles in
+                      Teams.
+                    </li>
+                    <li>
+                      Gained hands-on knowledge of PowerShell scripting and
+                      Office 365 administration.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative">
+                <div
+                  class="absolute -left-[41px] h-8 w-8 rounded-full bg-gray-600 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-white text-sm"
+                    >school</span
+                  >
+                </div>
+                <div
+                  class="bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700 hover:border-primary-500 transition-all duration-300"
+                >
+                  <div
+                    class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
+                  >
+                    <h3 class="text-xl font-bold text-white">Internship</h3>
+                    <div class="flex items-center mt-2 md:mt-0">
+                      <span
+                        class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm"
+                        >RSP Innovations</span
+                      >
+                      <span class="ml-3 text-gray-400 text-sm"
+                        >Jan 2021 - Dec 2021</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-gray-400 mb-4">
+                    <p class="mb-2">
+                      Technologies: Angular, Laravel (PHP), Google Maps API,
+                      Google Directions API, JWT Authentication
+                    </p>
+                  </div>
+                  <ul class="space-y-2 text-gray-300 list-disc pl-5">
+                    <li>
+                      Developed a delivery route management system using Angular
+                      and Laravel with Google Maps APIs.
+                    </li>
+                    <li>
+                      Designed a single journey model for delivery personnel
+                      with dynamic priority-based routing.
+                    </li>
+                    <li>
+                      Implemented JWT-based authentication for secure user login
+                      and session management.
+                    </li>
+                    <li>
+                      Built real-time delivery person status and location
+                      updates with live ETAs.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full max-w-[1300px] mx-auto px-4 sm:px-6 mt-6">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+              <div class="w-20 h-1 bg-primary-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div class="space-y-6">
+
+
+                <p class="text-gray-300 text-lg">
+                Hello! I'm Ayush, a dedicated developer with 3+ years of experience building robust web applications and APIs, seeking opportunities to work on impactful backend systems.
+
+                </p>
+                <p class="text-gray-400">
+                    I specialize in backend development using Node.js, Express, and Java, with a strong grasp of scalable architectures, database design, and RESTful services. My experience also covers modern frontend frameworks and integrating complex systems for seamless performance.
+                </p>
+                <p class="text-gray-400">
+When I’m not coding, I enjoy exploring Linux, contributing to open-source projects, and experimenting with new backend technologies and tools.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                  <div
+                    class="bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                  >
+                    <div class="text-4xl text-primary-500 mb-2">3+</div>
+                    <div class="text-gray-300">Years Experience</div>
+                  </div>
+                  <div
+                    class="bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                  >
+                    <div class="text-4xl text-primary-500 mb-2">30+</div>
+                    <div class="text-gray-300">Product Enhancements</div>
+                  </div>
+                  <div
+                    class="bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                  >
+                    <div class="text-4xl text-primary-500 mb-2">150+</div>
+                    <div class="text-gray-300">Workflow Automations</div>
+                  </div>
+                  <div
+                    class="bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                  >
+                    <div class="text-4xl text-primary-500 mb-2">10+</div>
+                    <div class="text-gray-300">Cross-Product Integrations</div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative">
+                <div
+                  class="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-purple-600 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+                ></div>
+                <div
+                  class="relative bg-gray-800 p-6 rounded-lg border border-gray-700"
+                >
+                  <h3 class="text-xl font-bold mb-4">
+                    Technical Skills Overview
+                  </h3>
+                  <div class="space-y-4">
+                    <div>
+                      <div class="flex justify-between mb-1">
+                        <span>Frontend Development</span> <span>90%</span>
+                      </div>
+                      <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div
+                          class="bg-primary-500 h-2.5 rounded-full"
+                          style="width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between mb-1">
+                        <span>Backend Development</span> <span>95%</span>
+                      </div>
+                      <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div
+                          class="bg-primary-500 h-2.5 rounded-full"
+                          style="width: 95%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between mb-1">
+                        <span>Database Management</span> <span>85%</span>
+                      </div>
+                      <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div
+                          class="bg-primary-500 h-2.5 rounded-full"
+                          style="width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between mb-1">
+                        <span>Workflow Automation</span> <span>90%</span>
+                      </div>
+                      <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div
+                          class="bg-primary-500 h-2.5 rounded-full"
+                          style="width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between mb-1">
+                        <span>System Integration</span> <span>85%</span>
+                      </div>
+                      <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div
+                          class="bg-primary-500 h-2.5 rounded-full"
+                          style="width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="https://drive.google.com/uc?export=download&id=1RBMfl_guHuao7mPp86ZlwOEjUnHIIzY2" download
+                  class="mt-6 inline-block text-primary-400 hover:text-primary-300"
+                  >
+                    Download Resume
+                    <span class="material-symbols-outlined align-middle text-sm"
+                      >download</span
+                    >
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="py-20 bg-gray-900">
+          <div class="w-full max-w-[1300px] mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
+              <div class="w-20 h-1 bg-primary-500 mx-auto mb-6"></div>
+              <p class="text-gray-400 max-w-2xl mx-auto">
+                Check out some of my personal projects that showcase my
+                problem-solving abilities and technical skills.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div
+                class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 group hover:border-primary-500 transition-colors shadow-lg"
+              >
+                <div class="h-48 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
+                    alt="Mobile HTTP interceptor application"
+                    class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                    keywords="mobile, security, http, interceptor, proxy, mobile app"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-bold">Mob Proxy</h3>
+                    <span
+                      class="px-3 py-1 bg-primary-500/20 text-primary-400 rounded-full text-xs"
+                      >Mobile</span
+                    >
+                  </div>
+                  <p class="text-gray-400 mb-4">
+                    A mobile HTTP interceptor application in Flutter,
+                    functioning as a lightweight alternative to traditional
+                    tools like Burp Suite.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >Flutter</span
+                    >
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >HTTP</span
+                    >
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >Security</span
+                    >
+                  </div>
+                  <!-- <div class="flex justify-between">
+                    <a
+                      href="#"
+                      class="text-primary-400 hover:text-primary-300 transition-colors flex items-center"
+                    >
+                      View Demo
+                      <span class="material-symbols-outlined ml-1"
+                        >visibility</span
+                      >
+                    </a>
+                    <a
+                      href="#"
+                      class="text-primary-400 hover:text-primary-300 transition-colors flex items-center"
+                    >
+                      Source <i class="fa-brands fa-github ml-1"></i>
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+              <div
+                class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 group hover:border-primary-500 transition-colors shadow-lg"
+              >
+                <div class="h-48 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzkyNDZ8MXwxfHNlYXJjaHwxfHxpbnZlbnRvcnl8ZW58MHx8fHwxNzQ4MjAwOTUzfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                    alt="Inventory management system"
+                    class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                    keywords="inventory, barcode, management, scanning, retail, QR code"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-bold">Barcoder</h3>
+                    <span
+                      class="px-3 py-1 bg-primary-500/20 text-primary-400 rounded-full text-xs"
+                      >Full Stack</span
+                    >
+                  </div>
+                  <p class="text-gray-400 mb-4">
+                    Complete inventory management and barcode generation
+                    platform with real-time WebSocket communication and
+                    distributed printing.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >Angular</span
+                    >
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >Rust</span
+                    >
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >Tauri</span
+                    >
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >WebSockets</span
+                    >
+                  </div>
+                  <!-- <div class="flex justify-between">
+                    <a
+                      href="#"
+                      class="text-primary-400 hover:text-primary-300 transition-colors flex items-center"
+                    >
+                      View Demo
+                      <span class="material-symbols-outlined ml-1"
+                        >visibility</span
+                      >
+                    </a>
+                    <a
+                      href="#"
+                      class="text-primary-400 hover:text-primary-300 transition-colors flex items-center"
+                    >
+                      Source <i class="fa-brands fa-github ml-1"></i>
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+              <div
+                class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 group hover:border-primary-500 transition-colors shadow-lg"
+              >
+                <div class="h-48 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b"
+                    alt="Productivity Management App"
+                    class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                    keywords="productivity, calendar, tasks, to-do, tracking, management"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-bold">Productivity Management</h3>
+                    <span
+                      class="px-3 py-1 bg-primary-500/20 text-primary-400 rounded-full text-xs"
+                      >Web App</span
+                    >
+                  </div>
+                  <p class="text-gray-400 mb-4">
+                    Calendar-based productivity tracking application with task
+                    management, visual progress tracking, and user
+                    authentication.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >Angular</span
+                    >
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >Node.js</span
+                    >
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >Express</span
+                    >
+                    <span class="px-2 py-1 bg-gray-700 rounded text-xs"
+                      >PostgreSQL</span
+                    >
+                  </div>
+                  <!-- <div class="flex justify-between">
+                    <a
+                      href="#"
+                      class="text-primary-400 hover:text-primary-300 transition-colors flex items-center"
+                    >
+                      View Demo
+                      <span class="material-symbols-outlined ml-1"
+                        >visibility</span
+                      >
+                    </a>
+                    <a
+                      href="#"
+                      class="text-primary-400 hover:text-primary-300 transition-colors flex items-center"
+                    >
+                      Source <i class="fa-brands fa-github ml-1"></i>
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="text-center mt-12">
+              <a
+                href="#"
+                class="px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white font-medium rounded-md transition-colors shadow-lg hover:shadow-primary-500/20 inline-flex items-center"
+              >
+                View All Projects
+                <span class="material-symbols-outlined ml-2"
+                  >arrow_forward</span
+                >
+              </a>
+            </div> -->
+          </div>
+        </section>
+        <section id="skills" class="py-20 bg-gray-800">
+          <div class="w-full max-w-[1300px] mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">My Tech Stack</h2>
+              <div class="w-20 h-1 bg-primary-500 mx-auto mb-6"></div>
+              <p class="text-gray-400 max-w-2xl mx-auto">
+                I work with a variety of technologies to create robust and
+                scalable applications.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div
+                class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors group"
+              >
+                <div
+                  class="w-16 h-16 rounded-lg bg-primary-500/20 flex items-center justify-center mb-6 group-hover:bg-primary-500/30 transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined text-3xl text-primary-400"
+                    >computer</span
+                  >
+                </div>
+                <h3 class="text-xl font-bold mb-4">Frontend</h3>
+                <ul class="space-y-3 text-gray-400">
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    Angular, JavaScript, TypeScript, EmberJS
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    HTML, CSS, Tailwind CSS
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    Figma
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    Responsive Design
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors group"
+              >
+                <div
+                  class="w-16 h-16 rounded-lg bg-primary-500/20 flex items-center justify-center mb-6 group-hover:bg-primary-500/30 transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined text-3xl text-primary-400"
+                    >dns</span
+                  >
+                </div>
+                <h3 class="text-xl font-bold mb-4">Backend</h3>
+                <ul class="space-y-3 text-gray-400">
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    TypeScript, JavaScript, Java
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    Node.js, Express.js, Spring Boot
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    Python, C++, C
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    RESTful APIs, JWT Authentication
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors group"
+              >
+                <div
+                  class="w-16 h-16 rounded-lg bg-primary-500/20 flex items-center justify-center mb-6 group-hover:bg-primary-500/30 transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined text-3xl text-primary-400"
+                    >storage</span
+                  >
+                </div>
+                <h3 class="text-xl font-bold mb-4">Databases &amp; Tools</h3>
+                <ul class="space-y-3 text-gray-400">
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    MongoDB, PostgreSQL
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    Prisma ORM
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    RabbitMQ, N8N
+                  </li>
+                  <li class="flex items-center">
+                    <span class="material-symbols-outlined mr-2 text-green-500"
+                      >check_circle</span
+                    >
+                    Postman, JSON, MVC, Burpsuite
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="mt-16 bg-gray-900 p-8 rounded-lg border border-gray-700"
+            >
+              <h3 class="text-xl font-bold mb-6 text-center">
+                Education &amp; Interests
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div
+                  class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                >
+                  <div class="flex items-center mb-4">
+                    <span
+                      class="material-symbols-outlined text-primary-500 text-2xl mr-3"
+                      >school</span
+                    >
+                    <h4 class="text-lg font-bold">
+                      Bachelor of Information Technology
+                    </h4>
+                  </div>
+                  <p class="text-gray-400 mb-1">
+                    Misrimal Navajee Munoth Jain Engineering College
+                  </p>
+                  <p class="text-gray-500 mb-2">
+                    Apr 2018 - May 2022 | Chennai, India
+                  </p>
+                  <p class="text-primary-400">
+                    Secured an aggregate of 8.01 CGPA
+                  </p>
+                </div>
+                <div
+                  class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                >
+                  <div class="flex items-center mb-4">
+                    <span
+                      class="material-symbols-outlined text-primary-500 text-2xl mr-3"
+                      >interests</span
+                    >
+                    <h4 class="text-lg font-bold">Personal Interests</h4>
+                  </div>
+                  <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-start">
+                      <span
+                        class="material-symbols-outlined text-green-500 mr-2 mt-1"
+                        >engineering</span
+                      >
+                      <span>Tinkering and Reverse Engineering</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        class="material-symbols-outlined text-green-500 mr-2 mt-1"
+                        >terminal</span
+                      >
+                      <span>Linux and Open Source</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        class="material-symbols-outlined text-green-500 mr-2 mt-1"
+                        >sports_esports</span
+                      >
+                      <span>Gaming and Creativity</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span
+                        class="material-symbols-outlined text-green-500 mr-2 mt-1"
+                        >lightbulb</span
+                      >
+                      <span>Exploration of New Technologies</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="py-20 bg-gray-900">
+          <div class="w-full max-w-[1300px] mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+              <div class="w-20 h-1 bg-primary-500 mx-auto mb-6"></div>
+              <p class="text-gray-400 max-w-2xl mx-auto">
+                Feel free to reach out for collaboration, job opportunities, or
+                just to say hello!
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div
+                class="bg-gray-800 p-8 rounded-lg border border-gray-700 shadow-lg"
+              >
+              <form
+  id="my-form"
+>
+                  <div>
+                    <label for="name" class="block text-gray-300 mb-2"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-gray-300 mb-2"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+                  <div>
+                    <label for="message" class="block text-gray-300 mb-2"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      rows="5"
+                      class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      placeholder="Your message here..."
+                    ></textarea>
+                  </div>
+                </form>
+                <button
+                  id="my-form-button"
+                  onclick="submit()"
+                  type="button"
+                  class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white font-medium rounded-md transition-colors shadow-lg hover:shadow-primary-500/20 mt-3"
+                >
+                  Send Message
+                  <span class="material-symbols-outlined align-middle ml-1"
+                    >send</span
+                  >
+                </button>
+              </div>
+              <div class="space-y-8">
+                <div
+                  class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                >
+                  <div class="flex items-start">
+                    <div
+                      class="w-12 h-12 rounded-lg bg-primary-500/20 flex items-center justify-center mr-4"
+                    >
+                      <span class="material-symbols-outlined text-primary-400"
+                        >mail</span
+                      >
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-bold mb-1">Email</h3>
+                      <a
+                        href="mailto:ayushkawad4@gmail.com"
+                        class="text-gray-400 hover:text-primary-400 transition-colors"
+                        >ayushkawad4@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                >
+                  <div class="flex items-start">
+                    <div
+                      class="w-12 h-12 rounded-lg bg-primary-500/20 flex items-center justify-center mr-4"
+                    >
+                      <span class="material-symbols-outlined text-primary-400"
+                        >phone</span
+                      >
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-bold mb-1">Phone</h3>
+                      <a
+                        href="tel:+917904706266"
+                        class="text-gray-400 hover:text-primary-400 transition-colors"
+                        >+91 7904706266</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-primary-500 transition-colors"
+                >
+                  <div class="flex items-start">
+                    <div
+                      class="w-12 h-12 rounded-lg bg-primary-500/20 flex items-center justify-center mr-4"
+                    >
+                      <span class="material-symbols-outlined text-primary-400"
+                        >location_on</span
+                      >
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-bold mb-1">Location</h3>
+                      <p class="text-gray-400">Chennai, India</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center space-x-6">
+                  <a
+                    href="https://github.com/ayushkawad"
+                    class="w-12 h-12 rounded-full flex items-center justify-center bg-gray-700 hover:bg-primary-500/20 transition-all hover:scale-110"
+                  >
+                    <i class="fa-brands fa-github text-xl"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/ayushkawad"
+                    class="w-12 h-12 rounded-full flex items-center justify-center bg-gray-700 hover:bg-primary-500/20 transition-all hover:scale-110"
+                  >
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                  </a>
+                  <a
+                    href="https://leetcode.com/u/ayushkawad/"
+                    class="w-12 h-12 rounded-full flex items-center justify-center bg-gray-700 hover:bg-primary-500/20 transition-all hover:scale-110"
+                  >
+                    <i class="fa-solid fa-code"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="py-8 bg-gray-800 border-t border-gray-700">
+          <div class="w-full max-w-[1300px] mx-auto px-4 sm:px-6 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="mb-4 md:mb-0">
+                <a
+                  href="#"
+                  class="text-xl font-bold flex items-center justify-center md:justify-start space-x-2 group"
+                >
+                  <span
+                    class="text-primary-500 group-hover:text-primary-400 transition-colors"
+                    >&lt;</span
+                  >
+                  <span class="group-hover:text-gray-300 transition-colors"
+                    >Ayush Kawad</span
+                  >
+                  <span
+                    class="text-primary-500 group-hover:text-primary-400 transition-colors"
+                    >/&gt;</span
+                  >
+                </a>
+              </div>
+              <div class="text-gray-400 mb-4 md:mb-0">
+                <p>© 2025 Ayush Kawad. All rights reserved.</p>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary-400 transition-colors flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined mr-1"
+                    >arrow_upward</span
+                  >
+                  Back to top
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+          name: "Retro",
+          fontFamily: {
+            sans: [
+              "Open Sans",
+              "ui-sans-serif",
+              "system-ui",
+              "sans-serif",
+              '"Apple Color Emoji"',
+              '"Segoe UI Emoji"',
+              '"Segoe UI Symbol"',
+              '"Noto Color Emoji"',
+            ],
+          },
+          extend: {
+            fontFamily: {
+              title: [
+                "Josefin Sans",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+                '"Segoe UI Symbol"',
+                '"Noto Color Emoji"',
+              ],
+              body: [
+                "Open Sans",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+                '"Segoe UI Symbol"',
+                '"Noto Color Emoji"',
+              ],
+            },
+            colors: {
+              neutral: {
+                50: "#ECE3CB",
+                100: "#E5DCC5",
+                200: "#DED5BF",
+                300: "#D7CFB9",
+                400: "#D0C8B3",
+                500: "#C9C1AD",
+                600: "#5E5B51",
+                700: "#47443D",
+                800: "#2F2D29",
+                900: "#181714",
+                DEFAULT: "#ECE3CB",
+              },
+              primary: {
+                50: "#FDF5F4",
+                100: "#FDF0EF",
+                200: "#FADFDE",
+                300: "#EF9994",
+                400: "#D78A85",
+                500: "#BF7A76",
+                600: "#B3736F",
+                700: "#8F5C59",
+                800: "#6C4543",
+                900: "#543634",
+                DEFAULT: "#EF9994",
+              },
+            },
+          },
+          fontSize: {
+            xs: ["12px", { lineHeight: "19.200000000000003px" }],
+            sm: ["14px", { lineHeight: "21px" }],
+            base: ["16px", { lineHeight: "25.6px" }],
+            lg: ["18px", { lineHeight: "27px" }],
+            xl: ["20px", { lineHeight: "28px" }],
+            "2xl": ["24px", { lineHeight: "31.200000000000003px" }],
+            "3xl": ["30px", { lineHeight: "36px" }],
+            "4xl": ["36px", { lineHeight: "41.4px" }],
+            "5xl": ["48px", { lineHeight: "52.800000000000004px" }],
+            "6xl": ["60px", { lineHeight: "66px" }],
+            "7xl": ["72px", { lineHeight: "75.60000000000001px" }],
+            "8xl": ["96px", { lineHeight: "100.80000000000001px" }],
+            "9xl": ["128px", { lineHeight: "134.4px" }],
+          },
+          borderRadius: {
+            none: "0px",
+            sm: "3.5px",
+            DEFAULT: "7px",
+            md: "10.5px",
+            lg: "14px",
+            xl: "21px",
+            "2xl": "28px",
+            "3xl": "42px",
+            full: "9999px",
+          },
+          spacing: {
+            0: "0px",
+            1: "4px",
+            2: "8px",
+            3: "12px",
+            4: "16px",
+            5: "20px",
+            6: "24px",
+            7: "28px",
+            8: "32px",
+            9: "36px",
+            10: "40px",
+            11: "44px",
+            12: "48px",
+            14: "56px",
+            16: "64px",
+            20: "80px",
+            24: "96px",
+            28: "112px",
+            32: "128px",
+            36: "144px",
+            40: "160px",
+            44: "176px",
+            48: "192px",
+            52: "208px",
+            56: "224px",
+            60: "240px",
+            64: "256px",
+            72: "288px",
+            80: "320px",
+            96: "384px",
+            px: "1px",
+            0.5: "2px",
+            1.5: "6px",
+            2.5: "10px",
+            3.5: "14px",
+          },
+        },
+        plugins: [],
+        important: "#main",
+      };
+    </script>
+<script>
+function submit(){
+      const form = document.getElementById('my-form');
+      const data = {
+        name: form.elements['name'].value,
+        email: form.elements['email'].value,
+        message: form.elements['message'].value
+      };
+        const response = fetch('https://formspree.io/f/mgvkjraa', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        }).then(() => {
+            showToast("Message sent successfully!")
+            form.reset();
+        });
+    }
+
+function showToast(message, duration = 3000) {
+  const toast = document.getElementById('toast');
+  const toastMsg = document.getElementById('toast-message');
+  toastMsg.textContent = message;
+  toast.classList.remove('hidden');
+  toast.classList.add('opacity-100');
+  setTimeout(() => {
+    toast.classList.add('hidden');
+    toast.classList.remove('opacity-100');
+  }, duration);
+}
+</script>
+
+  </body>
+</html>
